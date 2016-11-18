@@ -13,7 +13,7 @@ schemes are http, https, ftp, git and ssh.
 my token protocol   { [http|https|ftp|git|ssh]                      }
 my token baseascii  { [ <[a..z A..Z 0..9 \- . ]> ]+                 }
 my token base       { [ <:Number + :Letter + [ . - ]> ]+            }
-my token protected  { <[ $ + ! * ( ) , . ; ? @ = % & # ]>           }
+my token protected  { <[ $ + ! * ( ) , . ; ? @ = % & # " ' ]>           }
 my token allowed    { \S                                            }
 my regex term       { <allowed>+ <!after <protected>>               }
 my token after      { '/' <term>                                    }
