@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/samcv/URL-Find.svg?branch=master)](https://travis-ci.org/samcv/URL-Find)
 URL::Find
 =========
 
