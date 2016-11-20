@@ -15,5 +15,5 @@ my @correct =
 'http://www.com/commaæ',
 'https://www.google.com/search?q=perl+6&oq=perl+6&aqs=chrome.0.69i59l3j69i60l3.742j0j1&sourceid=chrome&ie=UTF-8';
 
-is find-urls($test-string, :ascii<1>), @correct, "Test finding URL's";
+is find-urls($test-string, :ascii<1>), @correct, "Test finding only ASCII URL's";
 done-testing;
