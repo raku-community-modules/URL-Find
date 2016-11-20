@@ -24,12 +24,7 @@ my regex urlascii   { <protocol> '://' <baseascii> [<after>+]? '/'? }
 #| http https ftp git and ssh schemes.
 sub find-urls ( Str $string, Num :$limit? is copy, :$ascii?) is export returns List  {
     $limit = ∞ if ! $limit.defined;
-    if $ascii {
-        return $string.comb(/<urlascii>/, $limit);
-    }
-    else {
-        return $string.comb(/<url>/, $limit);
-    }
+    $ascii ?? $string.comb(/<urlascii>/, $limit) !! $string.comb(/<url>/, $limit);
 }
 
 =AUTHOR Samantha McVey (samcv) samantham@posteo.net
