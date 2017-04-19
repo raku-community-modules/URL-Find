@@ -15,7 +15,7 @@
     "URL::Find": "lib/URL/Find.pm6"
   },
   "license": "Artistic-2.0",
-  "resources": {
+  "support": {
     "license": "http://www.perlfoundation.org/artistic_license_2_0"
   },
   "source-url": "git://github.com/samcv/URL-Find.git",
