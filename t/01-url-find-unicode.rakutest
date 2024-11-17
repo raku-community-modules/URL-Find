@@ -1,9 +1,8 @@
-#!perl6
 use Test;
+use URL::Find;
+
 plan 1;
 
-use lib 'lib';
-use URL::Find;
 my $test-string =
 Q{
 file://home/me/myfile.jpg
@@ -21,4 +20,5 @@ my @correct =
 'http://παράδειγμα.δοκιμή/';
 
 is find-urls($test-string), @correct, "Test finding Unicode URL's";
-done-testing;
+
+# vim: expandtab shiftwidth=4

@@ -1,9 +1,8 @@
-#!perl6
 use Test;
+use URL::Find;
+
 plan 1;
 
-use lib 'lib';
-use URL::Find;
 my $test-string =
 Q{"file://home/me/myfile.jpg",
 "https://www.google.com/search?q=perl+6&oq=perl+6&aqs=chrome.0.69i59l3j69i60l3.742j0j1&sourceid=chrome&ie=UTF-8"
@@ -19,4 +18,5 @@ my @correct =
 'http://παράδειγμα.δοκιμή/';
 
 is find-urls($test-string, :any<1>), @correct, "Test URL's with any scheme";
-done-testing;
+
+# vim: expandtab shiftwidth=4
