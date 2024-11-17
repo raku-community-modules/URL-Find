@@ -1,5 +1,5 @@
 {
-  "auth": "github:samcv",
+  "auth": "zef:raku-community-modules",
   "authors": [
     "Samantha McVey"
   ],
@@ -18,12 +18,11 @@
   ],
   "source-url": "https://github.com/raku-community-modules/URL-Find.git",
   "support": {
-    "bugtracker": "https://github.com/samcv/URL-Find/issues",
-    "license": "http://www.perlfoundation.org/artistic_license_2_0"
   },
   "tags": [
+    "URL"
   ],
   "test-depends": [
   ],
-  "version": "0.2.2"
+  "version": "0.2.3"
 }
